@@ -321,7 +321,7 @@ header.sticky{
     text-align: center;
     padding: 40px;
 }
-@media (max-width: 1425px){
+/* @media (max-width: 1425px){
     header{
         padding: 16px 3%;
         transition: .3s;
@@ -423,6 +423,43 @@ header.sticky{
 }
 @media (max-width:540px){
     
+} */
+@media (max-width: 980px){
+    #menu-icon{
+        display:block;
+        font-size: 25px;
+        color: var();
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--main-color);
+        text-align: right;
+        transition: all.40s;
+    }
+    .navlist a{
+        display: block;
+        padding: 1.2rem;
+        margin:1.5rem;
+        border-radius: 2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        background: var(--bg-color);
+        color: var(--main-color);
+    }
+    .navlist a::after{
+        display: none;
+    }
+    .navlist.active{
+        top: 100%;
+    }
 }
 
 
